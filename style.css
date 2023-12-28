@@ -1,0 +1,110 @@
+
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .afterAnimation{
+    display: none;
+  }
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 2em;
+    animation: moveLeftToRight 5s linear infinite;
+  }
+  
+  @keyframes moveLeftToRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(100vw - 100%)); /* Adjust distance as needed */
+    }
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+
+  #yes{
+    position: absolute;
+    top: 650px;
+    left: 60px;
+    width: 200px;
+  }
+  #no{
+    position: absolute;
+    top: 650px;
+    left: 300px;
+    width: 200px;
+  }
+  .yes1{
+    display: none; 
+  }
+  .no1{
+    display: none;
+  }
+  .yesimg{
+    height:600px ;
+  }
+  .yes1 h1{
+    margin-left: 80px;
+  }
+  .no1 h1{
+    margin-left: 70px;
+
+  }
+  
+
+  .image-container {
+    overflow: hidden;
+    width: 300px; /* Adjust container size */
+    height: 200px; /* Adjust container size */
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.2); /* Adjust the scale factor for zoom level */
+  }
+ 
+  .container{
+  }
+  
+  body{
+    background-color: rgb(252, 60, 185);
+    /* background-image: url('https://t4.ftcdn.net/jpg/02/57/59/63/360_F_257596344_06PNTFpS4ktforZ5JuQsOFX1hh6PuKNl.jpg'); */
+  }
+  #proposeBtn{
+    background-color: #6ac2e5;
+  }
+  h2{
+    font-size:70px;
+    font-family: cursive;
+    color: rgb(218, 211, 211);
+  }
